@@ -2,13 +2,13 @@ import React, { useState, useRef, useCallback, useEffect } from "react";
 import styled from "styled-components";
 import axios from 'axios';
 import { BASE_URL } from '../constants';
+import PodList from "../Components/Pod/PodList";
 
-// import ProductInsert from "../Components/Product/ProductInsert";
-import ProductList from "../Components/Product/ProductList";
-// import ProductSearch from "../Components/Product/ProductSearch";
-// import { searchProduct } from "./KSM/gplProduct";
+// import PodInsert from "../Components/Pod/PodInsert";
+// import PodSearch from "../Components/Pod/PodSearch";
+// import { searchPod } from "./KSM/gplPod";
 
-const ProductTemplate = styled.div`
+const PodTemplate = styled.div`
   min-height: 100%;
   height: 200vh;
   width: 100%;
@@ -103,13 +103,13 @@ const InsertBox = styled.div`
 `;
 
 export default () => {
-  const [products, setproducts] = useState([]);
+  const [pods, setpods] = useState([]);
 
   useEffect(() => {
     axios
-      .get(`${BASE_URL}/product/list`)
+      .get(`${BASE_URL}/pod/list`)
       .then((res) => {
-        setproducts(res.data);
+        setpods(res.data);
         console.log(res.data);
       })
       .catch((e) => {
@@ -121,8 +121,8 @@ export default () => {
 
   // const onSearch = useCallback(newData => {
   //   axios
-  //     .post(`${BASE_URL}/product/searchlist`)
-  //   setproducts(newData);
+  //     .post(`${BASE_URL}/pod/searchlist`)
+  //   setpods(newData);
   // }, []);
 
   // register(authForm) {
@@ -130,30 +130,30 @@ export default () => {
   // }
 
 
-  // const nextId = useRef(products.length);
+  // const nextId = useRef(pods.length);
 
 
   // const onInsert = useCallback(
   //   form => {
-  //     const product = {
+  //     const pod = {
   //       id: nextId.current,
   //       ...form
   //     };
-  //     setproducts(products.concat(product));
+  //     setpods(pods.concat(pod));
   //     nextId.current += 1;
   //   },
-  //   [products]
+  //   [pods]
   // );
 
   // const onRemove = useCallback(
   //     target => {
-  //         setproducts(products.filter(product => product.id !== target.id));
+  //         setpods(pods.filter(pod => pod.id !== target.id));
   //     },
-  //     [products]
+  //     [pods]
   // );
 
   return (
-    <ProductTemplate>
+    <PodTemplate>
       <HeaderBox>
         <Wrapper>
           <BackgroundText>제품 Info List</BackgroundText>
@@ -162,22 +162,22 @@ export default () => {
 
       <Body>
         <TitleBox>
-          {/* <ProductSearch onSearch={onSearch}></ProductSearch> */}
+          {/* <PodSearch onSearch={onSearch}></PodSearch> */}
         </TitleBox>
 
         <AppTitle>제품 정보 추가</AppTitle>
-        {/* <ProductInsert onInsert={onInsert}></ProductInsert> */}
+        {/* <PodInsert onInsert={onInsert}></PodInsert> */}
         <Blank></Blank>
 
         <InsertBox>
           {/* {loading && <Loading>loading</Loading>}
           {error && <Error>error</Error>}
           {!loading && !error && ( */}
-          {/* <ProductList products={products} onRemove={onRemove}></ProductList> */}
-          <ProductList products={products}></ProductList>
+          {/* <PodList pods={pods} onRemove={onRemove}></PodList> */}
+          <PodList pods={pods}></PodList>
           {/* )} */}
         </InsertBox>
       </Body>
-    </ProductTemplate>
+    </PodTemplate>
   );
 };
