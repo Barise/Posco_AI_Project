@@ -7,7 +7,7 @@
 #### 기술스택:
 
 - 프론트 : React(Native)
-- 백엔드 : Nodejs(Graphql+Prisma)
+- 백엔드 : Flask(Python)
 - Computer Vision : YOLO Darknet
 
 #### 팀 구분:
@@ -20,7 +20,7 @@
 - 강태훈 :
 - 이지현 :
 - 최형찬 :
-- 김태호 :
+- 김태호 : 
 
 #### 서비스 개요
 
