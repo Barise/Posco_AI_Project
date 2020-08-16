@@ -156,7 +156,7 @@ export default () => {
     <PodTemplate>
       <HeaderBox>
         <Wrapper>
-          <BackgroundText>제품 Info List</BackgroundText>
+          <BackgroundText>Stock Manage</BackgroundText>
         </Wrapper>
       </HeaderBox>
 

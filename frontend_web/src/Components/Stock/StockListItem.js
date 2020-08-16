@@ -27,18 +27,14 @@ const Category = styled.div`
   }
 `;
 
-export default ({ product }) => {
+export default ({ pod }) => {
   return (
     <Body>
-      <Category>{product.asin}</Category>
-      <Category>{product.name}</Category>
-      <Category>{product.podID}</Category>
-      <Category>{product.binID}</Category>
-      <Category>{product.height}</Category>
-      <Category>{product.length}</Category>
-      <Category>{product.width}</Category>
-      <Category>{product.quantity}</Category>
-      <Category>{product.weight}</Category>
+      <Category>{pod.podID}</Category>
+      <Category>{pod.binID}</Category>
+      <Category>{pod.emptinessScore}</Category>
+      <Category>{pod.expectedQuantity}</Category>
+      <Category>{pod.imageFrame}</Category>
       {/* <ProductDelete onRemove={onRemove} Product={Product}></ProductDelete> */}
     </Body>
   );

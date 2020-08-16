@@ -10,6 +10,7 @@ import styled from "styled-components";
 import About from "../Routes/About";
 import Products from "../Routes/Products";
 import Pods from "../Routes/Pods";
+import Stock from "../Routes/Stock"
 
 const Body = styled.div`
   display: flex;
@@ -28,6 +29,7 @@ const AppRouter = () => (
         <Route exact path="/" component={About}></Route>
         <Route path="/Products" component={Products}></Route>
         <Route path="/Pods" component={Pods}></Route>
+        <Route path="/Stock" component={Stock}></Route>
         <Redirect from="*" to="/" />
       </Switch>
     </Body>

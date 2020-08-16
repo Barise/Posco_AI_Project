@@ -3,10 +3,10 @@ import styled from "styled-components";
 import axios from 'axios';
 import { BASE_URL } from '../constants';
 
-// import ProductInsert from "../Components/Product/ProductInsert";
+import ProductInsert from "../Components/Product/ProductInsert";
 import ProductList from "../Components/Product/ProductList";
-// import ProductSearch from "../Components/Product/ProductSearch";
-// import { searchProduct } from "./KSM/gplProduct";
+import ProductSearch from "../Components/Product/ProductSearch";
+
 
 const ProductTemplate = styled.div`
   min-height: 100%;
@@ -156,17 +156,18 @@ export default () => {
     <ProductTemplate>
       <HeaderBox>
         <Wrapper>
-          <BackgroundText>제품 Info List</BackgroundText>
+          <BackgroundText>Product Manage</BackgroundText>
         </Wrapper>
       </HeaderBox>
 
       <Body>
         <TitleBox>
-          {/* <ProductSearch onSearch={onSearch}></ProductSearch> */}
+          <ProductSearch ></ProductSearch>
         </TitleBox>
 
-        <AppTitle>제품 정보 추가</AppTitle>
+        <AppTitle>제품을 추가하세요</AppTitle>
         {/* <ProductInsert onInsert={onInsert}></ProductInsert> */}
+        <ProductInsert></ProductInsert>
         <Blank></Blank>
 
         <InsertBox>

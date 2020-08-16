@@ -41,7 +41,7 @@ export default () => {
   return (
     <Header>
       <Link to="">
-        <img src={require("./logo.png")} alt="PO PANG logo" height="45vh" />
+        <img src={require("./logo.png")} alt="POPANG logo" height="45vh" />
       </Link>
       <Links>
         <Link to="Products">
@@ -49,6 +49,9 @@ export default () => {
         </Link>
         <Link to="Pods">
           <LinkItem>Pod</LinkItem>
+        </Link>
+        <Link to="Stock">
+          <LinkItem>Stock</LinkItem>
         </Link>
       </Links>
     </Header>
