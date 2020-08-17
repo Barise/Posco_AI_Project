@@ -2,17 +2,57 @@
     "1":{
         "podID":"A",
     
-        "binID":5, 
+        "binID":1, 
+    
+        "emptinessScore":0.1, 
+    
+        "expectedQuantity":5, 
+    
+        "imageFileName":"0.1_1.jpg"
+
+    },
+   
+    "2":{
+        "podID":"A",
+    
+        "binID":2, 
     
         "emptinessScore":0.1, 
     
         "expectedQuantity":2, 
     
-        "imageFileName":"0.1_gray5.jpg"
+        "imageFileName":"0.1_2.jpg"
 
     },
+
+    "3":{
+        "podID":"A",
     
-    "1":{
+        "binID":3, 
+    
+        "emptinessScore":0.1, 
+    
+        "expectedQuantity":1, 
+    
+        "imageFileName":"0.1_3.jpg"
+
+    },
+   
+    "4":{
+        "podID":"A",
+    
+        "binID":4, 
+    
+        "emptinessScore":0.1, 
+    
+        "expectedQuantity":1, 
+    
+        "imageFileName":"0.1_4.jpg"
+
+    },
+
+       
+    "5":{
         "podID":"A",
     
         "binID":5, 
@@ -21,20 +61,331 @@
     
         "expectedQuantity":2, 
     
-        "imageFileName":"0.1_gray5.jpg"
-
-    },
-    "2":{
-        "podID":"",
-    
-        "binID":, 
-    
-        "emptinessScore":, 
-    
-        "expectedQuantity":, 
-    
-        "imageFileName":""
-
+        "imageFileName":"0.1_5.jpg"
     },
 
+    "6":{
+        "podID":"A",
+    
+        "binID":6, 
+    
+        "emptinessScore":0.1, 
+    
+        "expectedQuantity":3, 
+    
+        "imageFileName":"0.1_6.jpg"
+
+    },
+
+    "7":{
+        "podID":"B",
+    
+        "binID":1, 
+    
+        "emptinessScore":0.3, 
+    
+        "expectedQuantity":9, 
+    
+        "imageFileName":"0.3_1.jpg"
+
+    },
+   
+    "8":{
+        "podID":"B",
+    
+        "binID":2, 
+    
+        "emptinessScore":0.3, 
+    
+        "expectedQuantity":12, 
+    
+        "imageFileName":"0.3_2.jpg"
+
+    },
+
+    "9":{
+        "podID":"B",
+    
+        "binID":3, 
+    
+        "emptinessScore":0.3, 
+    
+        "expectedQuantity":2, 
+    
+        "imageFileName":"0.3_3.jpg"
+
+    },
+   
+    "10":{
+        "podID":"B",
+    
+        "binID":4, 
+    
+        "emptinessScore":0.3, 
+    
+        "expectedQuantity":2, 
+    
+        "imageFileName":"0.3_4.jpg"
+
+    },
+
+       
+    "11":{
+        "podID":"B",
+    
+        "binID":5, 
+    
+        "emptinessScore":0.3, 
+    
+        "expectedQuantity":2, 
+    
+        "imageFileName":"0.3_5.jpg"
+    },
+
+    "12":{
+        "podID":"B",
+    
+        "binID":6, 
+    
+        "emptinessScore":0.3, 
+    
+        "expectedQuantity":3, 
+    
+        "imageFileName":"0.3_6.jpg"
+
+    },
+
+    "13":{
+        "podID":"C",
+    
+        "binID":1, 
+    
+        "emptinessScore":0.5, 
+    
+        "expectedQuantity":1, 
+    
+        "imageFileName":"0.5_1.jpg"
+
+    },
+   
+    "14":{
+        "podID":"C",
+    
+        "binID":2, 
+    
+        "emptinessScore":0.5, 
+    
+        "expectedQuantity":7, 
+    
+        "imageFileName":"0.5_2.jpg"
+
+    },
+
+    "15":{
+        "podID":"C",
+    
+        "binID":3, 
+    
+        "emptinessScore":0.5, 
+    
+        "expectedQuantity":6, 
+    
+        "imageFileName":"0.5_3.jpg"
+
+    },
+   
+    "16":{
+        "podID":"C",
+    
+        "binID":4, 
+    
+        "emptinessScore":0.5, 
+    
+        "expectedQuantity":2, 
+    
+        "imageFileName":"0.5_4.jpg"
+
+    },
+
+       
+    "17":{
+        "podID":"C",
+    
+        "binID":5, 
+    
+        "emptinessScore":0.5, 
+    
+        "expectedQuantity":3, 
+    
+        "imageFileName":"0.5_5.jpg"
+    },
+
+    "18":{
+        "podID":"C",
+    
+        "binID":6, 
+    
+        "emptinessScore":0.5, 
+    
+        "expectedQuantity":1, 
+    
+        "imageFileName":"0.5_6.jpg"
+
+    },
+
+    "19":{
+        "podID":"D",
+    
+        "binID":1, 
+    
+        "emptinessScore":0.7, 
+    
+        "expectedQuantity":6, 
+    
+        "imageFileName":"0.7_1.jpg"
+
+    },
+   
+    "20":{
+        "podID":"D",
+    
+        "binID":2, 
+    
+        "emptinessScore":0.7, 
+    
+        "expectedQuantity":3, 
+    
+        "imageFileName":"0.7_2.jpg"
+
+    },
+
+    "21":{
+        "podID":"D",
+    
+        "binID":3, 
+    
+        "emptinessScore":0.7, 
+    
+        "expectedQuantity":4, 
+    
+        "imageFileName":"0.7_3.jpg"
+
+    },
+   
+    "22":{
+        "podID":"D",
+    
+        "binID":4, 
+    
+        "emptinessScore":0.7, 
+    
+        "expectedQuantity":1, 
+    
+        "imageFileName":"0.7_4.jpg"
+
+    },
+
+       
+    "23":{
+        "podID":"D",
+    
+        "binID":5, 
+    
+        "emptinessScore":0.7, 
+    
+        "expectedQuantity":1, 
+    
+        "imageFileName":"0.7_5.jpg"
+    },
+
+    "24":{
+        "podID":"D",
+    
+        "binID":6, 
+    
+        "emptinessScore":0.7, 
+    
+        "expectedQuantity":3, 
+    
+        "imageFileName":"0.7_6.jpg"
+
+    },
+
+    "25":{
+        "podID":"E",
+    
+        "binID":1, 
+    
+        "emptinessScore":0.9, 
+    
+        "expectedQuantity":1, 
+    
+        "imageFileName":"0.9_1.jpg"
+
+    },
+   
+    "26":{
+        "podID":"E",
+    
+        "binID":2, 
+    
+        "emptinessScore":0.9, 
+    
+        "expectedQuantity":2, 
+    
+        "imageFileName":"0.9_2.jpg"
+
+    },
+
+    "27":{
+        "podID":"E",
+    
+        "binID":3, 
+    
+        "emptinessScore":0.9, 
+    
+        "expectedQuantity":1, 
+    
+        "imageFileName":"0.9_3.jpg"
+
+    },
+   
+    "28":{
+        "podID":"E",
+    
+        "binID":4, 
+    
+        "emptinessScore":0.9, 
+    
+        "expectedQuantity":0, 
+    
+        "imageFileName":"0.9_4.jpg"
+
+    },
+
+       
+    "29":{
+        "podID":"E",
+    
+        "binID":5, 
+    
+        "emptinessScore":0.9, 
+    
+        "expectedQuantity":1, 
+    
+        "imageFileName":"0.9_5.jpg"
+    },
+
+    "30":{
+        "podID":"E",
+    
+        "binID":6, 
+    
+        "emptinessScore":0.9, 
+    
+        "expectedQuantity":1, 
+    
+        "imageFileName":"0.9_6.jpg"
+
+    }
 }
