@@ -1,0 +1,40 @@
+{
+    "1":{
+        "podID":"A",
+    
+        "binID":5, 
+    
+        "emptinessScore":0.1, 
+    
+        "expectedQuantity":2, 
+    
+        "imageFileName":"0.1_gray5.jpg"
+
+    },
+    
+    "1":{
+        "podID":"A",
+    
+        "binID":5, 
+    
+        "emptinessScore":0.1, 
+    
+        "expectedQuantity":2, 
+    
+        "imageFileName":"0.1_gray5.jpg"
+
+    },
+    "2":{
+        "podID":"",
+    
+        "binID":, 
+    
+        "emptinessScore":, 
+    
+        "expectedQuantity":, 
+    
+        "imageFileName":""
+
+    },
+
+}
