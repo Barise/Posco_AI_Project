@@ -1,201 +1,893 @@
-{
-    "1": {
-        'asin': ,
+[
+    {
+        "asin": "000001",
 
-        'name': '오리온 카스타드',
+        "name": "칸타타",
 
-        'quantity': 1,
+        "quantity": 1,
 
-        'podID': "A",
+        "podID": "A",
 
-        'binID': 5
+        "binID": "1"
     },
-    "2": {
-        'asin': ,
+    {
+        "asin": "000002",
 
-        'name': '버터링',
+        "name": "혁신의 용광로",
 
-        'quantity': 2,
+        "quantity": 1,
 
-        'podID': "A",
+        "podID": "A",
 
-        'binID': 1
+        "binID": "2"
     },
-    "3": {
-        'asin': ,
+    {
+        "asin": "000003",
 
-        'name': '오예스',
+        "name": "트리오",
 
-        'quantity': 2,
+        "quantity": 1,
 
-        'podID': "A",
+        "podID": "A",
 
-        'binID': 1
+        "binID": "3"
     },
-    "4": {
-        'asin': ,
+    {
+        "asin": "000004",
 
-        'name': '생수통',
+        "name": "둥글레차",
 
-        'quantity': 1,
+        "quantity": 1,
 
-        'podID': "A",
+        "podID": "A",
 
-        'binID': 1
+        "binID": "4"
     },
-    "5": {
-        'asin': ,
+    {
+        "asin": "000005",
 
-        'name': 'PYTHON 프로그래밍',
+        "name": "화장지",
 
-        'quantity': 1,
+        "quantity": 1,
 
-        'podID': "A",
+        "podID": "A",
 
-        'binID': 2
+        "binID": "5"
     },
-    "6": {
-        'asin': ,
+    {
+        "asin": "000006",
 
-        'name': 'PARROT BEBOP 2 FPV',
+        "name": "참크래커",
 
-        'quantity': 1,
+        "quantity": 1,
 
-        'podID': "A",
+        "podID": "A",
 
-        'binID': 2
+        "binID": "6"
     },
-    "7": {
-        'asin': ,
+    {
+        "asin": "000001",
 
-        'name': 'BACKPACK',
+        "name": "칸타타",
 
-        'quantity': 1,
+        "quantity": 1,
 
-        'podID': "A",
+        "podID": "B",
 
-        'binID': 3
+        "binID": "1"
     },
-    "8": {
-        'asin': ,
+    {
+        "asin": "000007",
 
-        'name': 'SHOES_BOX',
+        "name": "카스타드",
 
-        'quantity': 1,
+        "quantity": 1,
 
-        'podID': "A",
+        "podID": "B",
 
-        'binID': 4
+        "binID": "1"
     },
-    "9": {
-        'asin': ,
+    {
+        "asin": "000006",
 
-        'name': '오리온 카스타드',
+        "name": "참크래커",
 
-        'quantity': 1,
+        "quantity": 1,
 
-        'podID': "A",
+        "podID": "B",
 
-        'binID': 5
+        "binID": "2"
     },
-    "10": {
-        'asin': ,
+    {
+        "asin": "000002",
 
-        'name': 'EXERCISE_BOX',
+        "name": "혁신의 용광로",
 
-        'quantity': 1,
+        "quantity": 1,
 
-        'podID': "A",
+        "podID": "B",
 
-        'binID': 5
+        "binID": "2"
     },
-    "11": {
-        'asin': ,
+    {
+        "asin": "000009",
 
-        'name': 'WATER_PACK',
+        "name": "빅데이터 전문가의 하둡관리",
 
-        'quantity': 1,
+        "quantity": 1,
 
-        'podID': "A",
+        "podID": "B",
 
-        'binID': 6
-    }
-    "12": {
-        'asin': ,
+        "binID": "3"
+    },
+    {
+        "asin": "000003",
 
-        'name': 'SHOPPING_BAG',
+        "name": "트리오",
 
-        'quantity': 1,
+        "quantity": 1,
 
-        'podID': "A",
+        "podID": "B",
 
-        'binID': 6
-    }
-    "13": {
-        'asin': ,
+        "binID": "3"
+    },
+    {
+        "asin": "000010",
 
-        'name': '혁신의 용광로',
+        "name": "텀블러",
 
-        'quantity': 2,
+        "quantity": 1,
 
-        'podID': "A",
+        "podID": "B",
 
-        'binID': 6
-    }
+        "binID": "4"
+    },
+    {
+        "asin": "000004",
 
-    "14": {
-        'asin': ,
+        "name": "둥글레차",
 
-        'name': '버터링',
+        "quantity": 1,
 
-        'quantity': 2,
+        "podID": "B",
 
-        'podID': "B",
+        "binID": "4"
+    },
+    {
+        "asin": "000011",
 
-        'binID': 1
-    }
-    "15": {
-        'asin': ,
+        "name": "오예스",
 
-        'name': '오예스',
+        "quantity": 1,
 
-        'quantity': 2,
+        "podID": "B",
 
-        'podID': "B",
+        "binID": "5"
+    },
+    {
+        "asin": "000005",
 
-        'binID': 1
-    }
-    "16": {
-        'asin': ,
+        "name": "화장지",
 
-        'name': '',
+        "quantity": 1,
 
-        'quantity': ,
+        "podID": "B",
 
-        'podID': "",
+        "binID": "5"
+    },
+    {
+        "asin": "000012",
 
-        'binID':
+        "name": "임베디드 안드로이드",
 
-            "17": {
-            'asin': ,
+        "quantity": 1,
 
-            'name': '',
+        "podID": "B",
 
-            'quantity': ,
+        "binID": "6"
+    },
+    {
+        "asin": "000031",
 
-            'podID': "",
+        "name": "오뜨",
 
-            'binID':
+        "quantity": 1,
 
-                "18": {
-                'asin': ,
+        "podID": "B",
 
-                'name': '',
+        "binID": "6"
+    },
+    {
+        "asin": "000001",
 
-                'quantity': ,
+        "name": "칸타타",
 
-                'podID': "",
+        "quantity": 1,
 
-                'binID':
-            }
-        }
+        "podID": "C",
+
+        "binID": "1"
+    },
+    {
+        "asin": "000007",
+
+        "name": "카스타드",
+
+        "quantity": 1,
+
+        "podID": "C",
+
+        "binID": "1"
+    },
+    {
+        "asin": "000004",
+
+        "name": "둥글레차",
+
+        "quantity": 1,
+
+        "podID": "C",
+
+        "binID": "1"
+    },
+    {
+        "asin": "000020",
+
+        "name": "가방",
+
+        "quantity": 1,
+
+        "podID": "C",
+
+        "binID": "2"
+    },
+    {
+        "asin": "000009",
+
+        "name": "빅데이터 전문가의 하둡관리",
+
+        "quantity": 1,
+
+        "podID": "C",
+
+        "binID": "3"
+    },
+    {
+        "asin": "000003",
+
+        "name": "트리오",
+
+        "quantity": 1,
+
+        "podID": "C",
+
+        "binID": "3"
+    },
+    {
+        "asin": "000010",
+
+        "name": "텀블러",
+
+        "quantity": 1,
+
+        "podID": "C",
+
+        "binID": "3"
+    },
+    {
+        "asin": "000044",
+
+        "name": "축구공",
+
+        "quantity": 1,
+
+        "podID": "C",
+
+        "binID": "4"
+    },
+    {
+        "asin": "000012",
+
+        "name": "임베디드 안드로이드",
+
+        "quantity": 1,
+
+        "podID": "C",
+
+        "binID": "4"
+    },
+    {
+        "asin": "000033",
+
+        "name": "쇼핑백",
+
+        "quantity": 1,
+
+        "podID": "C",
+
+        "binID": "5"
+    },
+    {
+        "asin": "000023",
+
+        "name": "땅콩샌드",
+
+        "quantity": 1,
+
+        "podID": "C",
+
+        "binID": "6"
+    },
+    {
+        "asin": "000023",
+
+        "name": "땅콩샌드",
+
+        "quantity": 1,
+
+        "podID": "C",
+
+        "binID": "6"
+    },
+    {
+        "asin": "000026",
+
+        "name": "운영체제",
+
+        "quantity": 1,
+
+        "podID": "C",
+
+        "binID": "6"
+    },
+    {
+        "asin": "000027",
+
+        "name": "삼다수",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "1"
+    },
+    {
+        "asin": "000004",
+
+        "name": "둥글레차",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "1"
+    },
+    {
+        "asin": "000020",
+
+        "name": "가방",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "2"
+    },
+    {
+        "asin": "000011",
+
+        "name": "오예스",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "3"
+    },
+    {
+        "asin": "000011",
+
+        "name": "오예스",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "3"
+    },
+    {
+        "asin": "000011",
+
+        "name": "오예스",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "3"
+    },
+    {
+        "asin": "000002",
+
+        "name": "혁신의 용광로",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "3"
+    },{
+        "asin": "000010",
+
+        "name": "텀블러",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "3"
+    },{
+        "asin": "000023",
+
+        "name": "땅콩샌드",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "4"
+    },{
+        "asin": "000007",
+
+        "name": "카스타드",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "4"
+    },{
+        "asin": "000044",
+
+        "name": "축구공",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "4"
+    },{
+        "asin": "000036",
+
+        "name": "Minute Maid 오렌지",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "4"
+    },{
+        "asin": "000033",
+
+        "name": "쇼핑백",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "5"
+    },
+    {
+        "asin": "000047",
+
+        "name": "롤러",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "5"
+    },
+    {
+        "asin": "000022",
+
+        "name": "푸쉬업 바",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "5"
+    },
+    {
+        "asin": "000026",
+
+        "name": "운영체제",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "6"
+    },
+    {
+        "asin": "000039",
+
+        "name": "밀키스",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "6"
+    },
+    {
+        "asin": "000049",
+
+        "name": "페리오 치약",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "6"
+    },
+    {
+        "asin": "000031",
+
+        "name": "오뜨",
+
+        "quantity": 1,
+
+        "podID": "D",
+
+        "binID": "6"
+    },
+    {
+        "asin": "000027",
+
+        "name": "삼다수",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "1"
+    },
+    {
+        "asin": "000028",
+
+        "name": "드론 DIY 가이드",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "1"
+    },
+    {
+        "asin": "000007",
+
+        "name": "카스타드",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "1"
+    },
+    {
+        "asin": "000018",
+
+        "name": "제크",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "1"
+    },
+    {
+        "asin": "000050",
+
+        "name": "버터링",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "1"
+    },
+    {
+        "asin": "000051",
+
+        "name": "리눅스에서 R과 하둡을 이용한 빅데이터 처리 분석",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "1"
+    },
+    {
+        "asin": "000020",
+
+        "name": "가방",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "2"
+    },
+    {
+        "asin": "000011",
+
+        "name": "오예스",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "3"
+    },
+    {
+        "asin": "000011",
+
+        "name": "오예스",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "3"
+    },
+    {
+        "asin": "000011",
+
+        "name": "오예스",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "3"
+    },
+    {
+        "asin": "000022",
+
+        "name": "푸쉬업 바",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "3"
+    },
+    {
+        "asin": "000002",
+
+        "name": "혁신의 용광로",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "3"
+    },
+    
+    {
+        "asin": "000010",
+
+        "name": "텀블러",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "3"
+    },
+    
+    
+    {
+        "asin": "000023",
+
+        "name": "땅콩샌드",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "3"
+    },
+    
+    {
+        "asin": "000007",
+
+        "name": "카스타드",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "4"
+    },
+    {
+        "asin": "000007",
+
+        "name": "카스타드",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "4"
+    },
+    {
+        "asin": "000006",
+
+        "name": "참크래커",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "4"
+    },
+    {
+        "asin": "000006",
+
+        "name": "참크래커",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "4"
+    },
+    {
+        "asin": "000018",
+
+        "name": "제크",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "4"
+    },
+    
+    {
+        "asin": "000003",
+
+        "name": "트리오",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "4"
+    },
+    
+    {
+        "asin": "000039",
+
+        "name": "밀키스",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "4"
+    },
+    {
+        "asin": "000009",
+
+        "name": "빅데이터 전문가의 하둡관리",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "4"
+    },
+    {
+        "asin": "000033",
+
+        "name": "쇼핑백",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "5"
+    },
+    {
+        "asin": "000034",
+
+        "name": "정수기용 물통",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "5"
+    },
+    {
+        "asin": "000036",
+
+        "name": "Minute Maid 오렌지",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "6"
+    },
+    {
+        "asin": "000012",
+
+        "name": "임베디드 안드로이드",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "6"
+    },
+    {
+        "asin": "000002",
+
+        "name": "혁신의 용광로",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "6"
+    },
+    {
+        "asin": "000031",
+
+        "name": "오뜨",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "6"
+    },
+    {
+        "asin": "000029",
+
+        "name": "자바의 신1",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "6"
+    },
+    {
+        "asin": "000030",
+
+        "name": "자바의 신2",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "6"
+    },
+    {
+        "asin": "000026",
+
+        "name": "운영체제",
+
+        "quantity": 1,
+
+        "podID": "E",
+
+        "binID": "6"
+    }   
+]

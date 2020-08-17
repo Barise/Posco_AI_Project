@@ -3,18 +3,17 @@ from flask_cors import CORS, cross_origin
 import pymysql
 import os
 from werkzeug.utils import secure_filename
-import logging
+# import logging
 
+# logging.basicConfig(level=logging.INFO)
+# logger = logging.getLogger('HELLO WORLD')
 
-logging.basicConfig(level=logging.INFO)
+app = Flask(__name__)
 
-logger = logging.getLogger('HELLO WORLD')
-
-UPLOAD_FOLDER = './images'
+app.config['UPLOAD_FOLDER'] = 'C:\\Users\\PIAI\\Desktop\\AI_Project\\Posco_AI_Project\\backend\\images'
 ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
 
 
-app = Flask(__name__)
 cors = CORS(app, resources={r"*": {"origins": "*"}})
 conn = pymysql.connect(host="localhost", user="root",
                        password="root", db="popang", charset="utf8")
@@ -38,16 +37,17 @@ def product_list():
 
 @app.route('/upload', methods=['POST'])
 def fileUpload():
-    target=os.path.join(UPLOAD_FOLDER,'test_docs')
+    target = os.path.join(app.config['UPLOAD_FOLDER'], 'test')
     if not os.path.isdir(target):
-        os.mkdir(target)
-    logger.info("welcome to upload`")
-    file = request.files['file'] 
+        os.mkdir(target) 
+    # logger.info("welcome to upload`")
+    file = request.files['file']
     filename = secure_filename(file.filename)
-    destination="/".join([target, filename])
+    destination = "/".join([target, filename])
     file.save(destination)
-    session['uploadFilePath']=destination
-    response="Whatever you wish too return"
+    session['uploadFilePath'] = destination
+    
+    response = "이미지가 업로드 되었습니다."
     return response
 
 # @app.route("/product/searchlist")
@@ -69,4 +69,5 @@ def pod_list():
 
 
 if __name__ == '__main__':
+    app.secret_key = os.urandom(24)
     app.run(host="127.0.0.1", port="8000")
