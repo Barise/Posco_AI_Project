@@ -1,134 +1,201 @@
 {
-    "1" : {   
-        'asin':,
+    "1": {
+        'asin': ,
 
-        'name': '오리온 카스타드', 
+        'name': '오리온 카스타드',
 
-        'quantity':1, 
+        'quantity': 1,
 
         'podID': "A",
 
         'binID': 5
     },
-    "2" : {   
-        'asin':,
+    "2": {
+        'asin': ,
 
-        'name': '', 
+        'name': '버터링',
 
-        'quantity':, 
+        'quantity': 2,
+
+        'podID': "A",
+
+        'binID': 1
+    },
+    "3": {
+        'asin': ,
+
+        'name': '오예스',
+
+        'quantity': 2,
+
+        'podID': "A",
+
+        'binID': 1
+    },
+    "4": {
+        'asin': ,
+
+        'name': '생수통',
+
+        'quantity': 1,
+
+        'podID': "A",
+
+        'binID': 1
+    },
+    "5": {
+        'asin': ,
+
+        'name': 'PYTHON 프로그래밍',
+
+        'quantity': 1,
+
+        'podID': "A",
+
+        'binID': 2
+    },
+    "6": {
+        'asin': ,
+
+        'name': 'PARROT BEBOP 2 FPV',
+
+        'quantity': 1,
+
+        'podID': "A",
+
+        'binID': 2
+    },
+    "7": {
+        'asin': ,
+
+        'name': 'BACKPACK',
+
+        'quantity': 1,
+
+        'podID': "A",
+
+        'binID': 3
+    },
+    "8": {
+        'asin': ,
+
+        'name': 'SHOES_BOX',
+
+        'quantity': 1,
+
+        'podID': "A",
+
+        'binID': 4
+    },
+    "9": {
+        'asin': ,
+
+        'name': '오리온 카스타드',
+
+        'quantity': 1,
+
+        'podID': "A",
+
+        'binID': 5
+    },
+    "10": {
+        'asin': ,
+
+        'name': 'EXERCISE_BOX',
+
+        'quantity': 1,
+
+        'podID': "A",
+
+        'binID': 5
+    },
+    "11": {
+        'asin': ,
+
+        'name': 'WATER_PACK',
+
+        'quantity': 1,
+
+        'podID': "A",
+
+        'binID': 6
+    }
+    "12": {
+        'asin': ,
+
+        'name': 'SHOPPING_BAG',
+
+        'quantity': 1,
+
+        'podID': "A",
+
+        'binID': 6
+    }
+    "13": {
+        'asin': ,
+
+        'name': '혁신의 용광로',
+
+        'quantity': 2,
+
+        'podID': "A",
+
+        'binID': 6
+    }
+
+    "14": {
+        'asin': ,
+
+        'name': '버터링',
+
+        'quantity': 2,
+
+        'podID': "B",
+
+        'binID': 1
+    }
+    "15": {
+        'asin': ,
+
+        'name': '오예스',
+
+        'quantity': 2,
+
+        'podID': "B",
+
+        'binID': 1
+    }
+    "16": {
+        'asin': ,
+
+        'name': '',
+
+        'quantity': ,
 
         'podID': "",
 
-        'binID': 
-        },
-    "3" : {   
-        'asin':,
+        'binID':
 
-        'name': '', 
+            "17": {
+            'asin': ,
 
-        'quantity':, 
+            'name': '',
 
-        'podID': "",
+            'quantity': ,
 
-        'binID': 
-        },
-    "4" : {   
-        'asin':,
+            'podID': "",
 
-        'name': '', 
+            'binID':
 
-        'quantity':, 
+                "18": {
+                'asin': ,
 
-        'podID': "",
+                'name': '',
 
-        'binID': 
-        },
-    "5" : {   
-        'asin':,
+                'quantity': ,
 
-        'name': '', 
+                'podID': "",
 
-        'quantity':, 
-
-        'podID': "",
-
-        'binID': 
-        },
-    "6" : {   
-        'asin':,
-
-        'name': '', 
-
-        'quantity':, 
-
-        'podID': "",
-
-        'binID': 
-        },
-    "7" : {   
-        'asin':,
-
-        'name': '', 
-
-        'quantity':, 
-
-        'podID': "",
-
-        'binID': 
-        },
-    "8" : {   
-        'asin':,
-
-        'name': '', 
-
-        'quantity':, 
-
-        'podID': "",
-
-        'binID': 
-        },
-    "9" : {   
-        'asin':,
-
-        'name': '', 
-
-        'quantity':, 
-
-        'podID': "",
-
-        'binID': 
-        },
-    "10" : {   
-        'asin':,
-
-        'name': '', 
-
-        'quantity':, 
-
-        'podID': "",
-
-        'binID': 
-        },
-    "11" : {   
-        'asin':,
-
-        'name': '', 
-
-        'quantity':, 
-
-        'podID': "",
-
-        'binID': 
+                'binID':
+            }
         }
-}
-
-
-
-
-
-
-
-
-
-
-
