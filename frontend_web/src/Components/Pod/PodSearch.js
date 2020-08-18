@@ -6,7 +6,7 @@ const Form = styled.form`
   display: flex;
   background-color: ${props => props.theme.brightSky};
   height: 5vh;
-  width: 79vw;
+  width: 84vw;
   justify-content: center;
   align-items: center;
   font-size: 2.5vh;

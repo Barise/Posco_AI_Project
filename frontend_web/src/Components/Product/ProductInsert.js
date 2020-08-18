@@ -6,7 +6,7 @@ const Form = styled.form`
   display: flex;
   background-color: ${props => props.theme.brightSky};
   height: 5vh;
-  width: 79vw;
+  width: 84vw;
   justify-content: center;
   align-items: center;
   font-size: 2.5vh;
@@ -26,18 +26,6 @@ const Input = styled.input`
     border-left: 2px solid ${props => props.theme.brightSky};
   }
 `;
-const Loading = styled.div`
-  font-size: 20px;
-  text-align: center;
-  padding-top: 3px;
-  height: 5vh;
-`;
-const Error = styled.div`
-  font-size: 2vh;
-  height: 5vh;
-  align-items: center;
-`;
-
 const Button = styled.button`
   outline: none;
   border: none;

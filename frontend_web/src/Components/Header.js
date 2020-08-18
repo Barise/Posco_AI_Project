@@ -9,7 +9,7 @@ const Header = styled.header`
   display: flex;
   flex: 1;
   height: 7.5vh;
-  background-color: #272343;
+  background-color: #000000;
   justify-content: space-between;
   align-items: center;
   padding-right: 2em;
@@ -29,19 +29,11 @@ const LinkItem = styled.span`
 `;
 
 const Links = styled.div``;
-
-// export const LOG_OUT = gql`
-//   mutation logUserOut {
-//     logUserOut @client
-//   }
-// `;
-// export default ({ isLoggedIn }) => {
 export default () => {
-  // const [logOut] = useMutation(LOG_OUT);
   return (
     <Header>
       <Link to="">
-        <img src={require("./logo.png")} alt="POPANG logo" height="45vh" />
+        <img src={require("./../assets/logo.png")} alt="POPANG logo" height="45vh" />
       </Link>
       <Links>
         <Link to="Products">
@@ -52,9 +44,6 @@ export default () => {
         </Link>
         <Link to="Stock">
           <LinkItem>Stock</LinkItem>
-        </Link>
-        <Link to="Image">
-          <LinkItem>ImageUpload</LinkItem>
         </Link>
       </Links>
     </Header>

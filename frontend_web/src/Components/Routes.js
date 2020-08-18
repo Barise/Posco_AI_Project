@@ -11,7 +11,6 @@ import About from "../Routes/About";
 import Products from "../Routes/Products";
 import Pods from "../Routes/Pods";
 import Stock from "../Routes/Stock";
-import Image from "../Routes/Image";
 
 const Body = styled.div`
   display: flex;
@@ -31,7 +30,6 @@ const AppRouter = () => (
         <Route path="/Products" component={Products}></Route>
         <Route path="/Pods" component={Pods}></Route>
         <Route path="/Stock" component={Stock}></Route>
-        <Route path="/Image" component={Image}></Route>
         <Redirect from="*" to="/" />
       </Switch>
     </Body>

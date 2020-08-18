@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+// import ProductDelete from "./ProductDelete";
 
 const Body = styled.div`
   display: flex;
-  background-color: white;
+  background-color: yellow;
   height: 5vh;
   justify-content: center;
   align-items: center;
@@ -26,13 +27,15 @@ const Category = styled.div`
   }
 `;
 
-export default ({ stock }) => {
+export default ({ pod }) => {
   return (
     <Body>
-      <Category>{stock.podID}</Category>
-      <Category>{stock.binID}</Category>
-      <Category>{stock.expectedQuantity}</Category>
-      <Category>{stock.quantity}</Category>
+      <Category>{pod.podID}</Category>
+      <Category>{pod.binID}</Category>
+      <Category>{pod.emptinessScore}</Category>
+      <Category>{pod.expectedQuantity}</Category>
+      <Category>{pod.imageName}</Category>
+      {/* <ProductDelete onRemove={onRemove} Product={Product}></ProductDelete> */}
     </Body>
   );
 };

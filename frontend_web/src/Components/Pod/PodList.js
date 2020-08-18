@@ -19,7 +19,7 @@ const AppTitle = styled.div`
 `;
 
 const SearchResult = styled.div`
-  height: 40vh;
+  height: 70vh;
   overflow-y: auto;
   background-color: white;
   &::-webkit-scrollbar {
@@ -49,18 +49,6 @@ const Button = styled.button`
   background-color: ${props => props.theme.normalSky};
 `;
 
-const Loading = styled.div`
-  font-size: 20px;
-  text-align: center;
-  padding-top: 3px;
-  height: 5vh;
-`;
-const Error = styled.div`
-  font-size: 2vh;
-  height: 5vh;
-  align-items: center;
-`;
-
 // export default ({ Pod, onRemove }) => {
 export default ({ pods }) => {
   return (
@@ -70,14 +58,14 @@ export default ({ pods }) => {
         <Category> 선반번호(binID)</Category>
         <Category> 빈공간비율(emptinessScore) </Category>
         <Category> 제품예상개수(expectedQuantity)</Category>
-        <Category> 이미지이름(imageFrame)</Category>
+        <Category> 이미지이름(imageName)</Category>
         <Button></Button>
       </AppTitle>
 
       <SearchResult>
         {pods.map(pod => (
           <PodListItem
-            key={pod.asin}
+            key={pod.productID}
             pod={pod}
           ></PodListItem>
         ))}

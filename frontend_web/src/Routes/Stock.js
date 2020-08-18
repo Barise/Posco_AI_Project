@@ -2,11 +2,54 @@ import React, { useState, useRef, useCallback, useEffect } from "react";
 import styled from "styled-components";
 import axios from 'axios';
 import { BASE_URL } from '../constants';
-import StockList from "../Components/Stock/StockList";
+import StockListItem from "../Components/Stock/StockListItem";
+import StockList from "../Components/Stock/StockList"
+const StockBody = styled.div`
+  background-color: ${props => props.theme.normalSky};
+  height: 45vh;
+`;
 
-// import StockInsert from "../Components/Stock/StockInsert";
-// import StockSearch from "../Components/Stock/StockSearch";
-// import { searchStock } from "./KSM/gplStock";
+const StockAppTitle = styled.div`
+  display: flex;
+  height: 5vh;
+  font-size: 2.5vh;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  flex: 1;
+`;
+
+const StockSearchResult = styled.div`
+  height: 40vh;
+  overflow-y: auto;
+  background-color: white;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+`;
+
+const StockCategory = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  padding-left: 1vh;
+  font-size: 2vh;
+  overflow: hidden;
+  & + & {
+    border-left: 2px solid ${props => props.theme.brightSky};
+  }
+`;
+
+const StockButton = styled.button`
+  border: none;
+  outline: none;
+  height: 5vh;
+  width: 5vh;
+  background-color: ${props => props.theme.normalSky};
+`;
 
 const StockTemplate = styled.div`
   min-height: 100%;
@@ -32,7 +75,7 @@ const Wrapper = styled.div`
       rgba(20, 20, 20, 0.7) 70%,
       rgba(20, 20, 20, 1)
     ),
-    url(https://t1.daumcdn.net/cfile/tistory/997E5C3C5BA1E68137);
+      url('https://t1.daumcdn.net/cfile/tistory/994DED365A55CCF53B');
   min-height: 100%;
 `;
 
@@ -58,7 +101,7 @@ const BackgroundText = styled.div`
 
 const Body = styled.div`
   align-items: center;
-  width: 80%;
+  width: 85%;
   padding-top: 5%;
   margin: auto;
 `;
@@ -77,18 +120,6 @@ const Blank = styled.div`
   background-color: ${props => props.theme.white};
   height: 5vh;
 `;
-const Loading = styled.div`
-  font-size: 20px;
-  text-align: center;
-  padding-top: 3px;
-  height: 5vh;
-`;
-const Error = styled.div`
-  font-size: 2vh;
-  height: 5vh;
-  align-items: center;
-`;
-
 const TitleBox = styled.div`
   display: flex;
   justify-content: center;
@@ -103,54 +134,29 @@ const InsertBox = styled.div`
 `;
 
 export default () => {
-  const [stocks, setStock] = useState([]);
+  const [stockTrue, setStockTrue] = useState([]);
+  // const [stockFalse, setStockFalse] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`${BASE_URL}/stock/list`)
+    // axios
+    //   .get(`${BASE_URL}/stock/falselist`)
+    //   .then((res) => {
+    //     setStockFalse(res.data);
+    //     console.log(res.data);
+    //   })
+    //   .catch((e) => {
+    //     console.log(e);
+    //   });
+      axios
+      .get(`${BASE_URL}/stock/truelist`)
       .then((res) => {
-        setStock(res.data);
+        setStockTrue(res.data);
         console.log(res.data);
       })
       .catch((e) => {
         console.log(e);
       });
   }, []);
-
-
-
-  // const onSearch = useCallback(newData => {
-  //   axios
-  //     .post(`${BASE_URL}/stock/searchlist`)
-  //   setstock(newData);
-  // }, []);
-
-  // register(authForm) {
-  //   return axios.post(`${this.URL}/register/`, authForm);
-  // }
-
-
-  // const nextId = useRef(stock.length);
-
-
-  // const onInsert = useCallback(
-  //   form => {
-  //     const stock = {
-  //       id: nextId.current,
-  //       ...form
-  //     };
-  //     setstock(stock.concat(stock));
-  //     nextId.current += 1;
-  //   },
-  //   [stock]
-  // );
-
-  // const onRemove = useCallback(
-  //     target => {
-  //         setstock(stock.filter(stock => stock.id !== target.id));
-  //     },
-  //     [stock]
-  // );
 
   return (
     <StockTemplate>
@@ -161,20 +167,43 @@ export default () => {
       </HeaderBox>
 
       <Body>
-        <TitleBox>
-          {/* <StockSearch onSearch={onSearch}></StockSearch> */}
-        </TitleBox>
-        <AppTitle>예측값과 DB의 값이 일치하지 않는 제품들 입니다.</AppTitle>
-        {/* <StockInsert onInsert={onInsert}></StockInsert> */}
+        <TitleBox></TitleBox>
+        <AppTitle>재고관리</AppTitle>
         <Blank></Blank>
+        {/* <InsertBox>
+        <StockBody>
+          <StockSearchResult>
+            {stockTrue.map(stock=>(
+              <StockListItem
+              key={stock.binID}
+              stock={stock}
+              ></StockListItem>
+            ))}
+          </StockSearchResult>
+        </StockBody>
+        </InsertBox> */}
+
 
         <InsertBox>
-          {/* {loading && <Loading>loading</Loading>}
-          {error && <Error>error</Error>}
-          {!loading && !error && ( */}
-          {/* <StockList stock={stock} onRemove={onRemove}></StockList> */}
-          <StockList stocks={stocks}></StockList>
-          {/* )} */}
+        <StockBody>
+          {/* <StockSearchResult>
+            {stockFalse.map(stock=>(
+              <StockListItem
+              // key={stock}
+              stock={stock}
+              ></StockListItem>
+            ))}
+            </StockSearchResult> */}
+            <StockList></StockList>
+            {/* <StockSearchResult>
+            {stockTrue.map(stock=>(
+              <StockListItem
+              key={stock.podID}
+              stock={stock}
+              ></StockListItem>
+            ))}
+          </StockSearchResult> */}
+        </StockBody>
         </InsertBox>
       </Body>
     </StockTemplate>

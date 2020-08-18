@@ -19,7 +19,7 @@ const AppTitle = styled.div`
 `;
 
 const SearchResult = styled.div`
-  height: 40vh;
+  height: 70vh;
   overflow-y: auto;
   background-color: white;
   &::-webkit-scrollbar {
@@ -78,7 +78,7 @@ export default ({ products }) => {
       <SearchResult>
         {products.map(product => (
           <ProductListItem
-            key={product.asin}
+            key={product.productID}
             product={product}
           ></ProductListItem>
         ))}

@@ -3,10 +3,6 @@ from flask_cors import CORS, cross_origin
 import pymysql
 import os
 from werkzeug.utils import secure_filename
-# import logging
-
-# logging.basicConfig(level=logging.INFO)
-# logger = logging.getLogger('HELLO WORLD')
 
 app = Flask(__name__)
 
@@ -19,21 +15,10 @@ conn = pymysql.connect(host="localhost", user="root",
                        password="root", db="popang", charset="utf8")
 curs = conn.cursor(pymysql.cursors.DictCursor)
 
-
 @app.route("/")
 def hello():
     print("hello world")
     return jsonify({"TEO":"hello"})
-
-@app.route("/product/list")
-def product_list():
-    print("######################################################################################################")
-    # sql = "select b.*, @rownum := @rownum+1 as rnum from board as b, (select @rownum := 0) as r"
-    sql = "select * from product"
-    curs.execute(sql)
-    rows = curs.fetchall()
-    print(jsonify(rows))
-    return jsonify(rows)
 
 @app.route('/upload', methods=['POST'])
 def fileUpload():
@@ -50,23 +35,34 @@ def fileUpload():
     response = "이미지가 업로드 되었습니다."
     return response
 
-# @app.route("/product/searchlist")
-# def product_Search_List():
-#     # sql = "select b.*, @rownum := @rownum+1 as rnum from board as b, (select @rownum := 0) as r"
-#     sql = "select * from product"
-#     curs.execute(sql)
-#     rows = curs.fetchall()
-#     return jsonify(rows)
+@app.route("/product/list")
+def product_list():
+    sql = "select * from product"
+    curs.execute(sql)
+    rows = curs.fetchall()
+    print(jsonify(rows))
+    return jsonify(rows)
 
 @app.route("/pod/list")
 def pod_list():
-    # sql = "select b.*, @rownum := @rownum+1 as rnum from board as b, (select @rownum := 0) as r"
-    
     sql = "select * from pod order by emptinessScore"
     curs.execute(sql)
     rows = curs.fetchall()
     return jsonify(rows)
 
+@app.route("/stock/falselist")
+def stock_falseList():
+    sql = "select * from falselist"
+    curs.execute(sql)
+    rows = curs.fetchall()
+    return jsonify(rows)
+
+@app.route("/stock/truelist")
+def stock_trueList():
+    sql = "select * from truelist"
+    curs.execute(sql)
+    rows = curs.fetchall()
+    return jsonify(rows)
 
 if __name__ == '__main__':
     app.secret_key = os.urandom(24)

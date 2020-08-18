@@ -6,7 +6,7 @@ const Form = styled.form`
   display: flex;
   background-color: ${props => props.theme.brightSky};
   height: 5vh;
-  width: 79vw;
+  width: 54vw;
   justify-content: center;
   align-items: center;
   font-size: 2.5vh;
@@ -33,9 +33,9 @@ const Input = styled.input`
   &::placeholder {
     color: grey;
   }
-  & + & {
-    border-left: 2px solid ${props => props.theme.brightSky};
-  }
+  // & + & {
+  //   border-left: 2px solid ${props => props.theme.brightSky};
+  // }
 `;
 
 const Button = styled.button`
@@ -58,6 +58,11 @@ export default () => {
       <Blank></Blank>
       <ImageUpload></ImageUpload>
       <Form>
+      <Input
+          placeholder=""
+          name="blank"
+          // type = "hidden"
+      />
         <Input
           placeholder="  진열장(Pod) 이름"
           name="Pod 이름"

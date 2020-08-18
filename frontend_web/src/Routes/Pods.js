@@ -31,7 +31,7 @@ const Wrapper = styled.div`
       rgba(20, 20, 20, 0.7) 70%,
       rgba(20, 20, 20, 1)
     ),
-    url(https://t1.daumcdn.net/cfile/tistory/997E5C3C5BA1E68137);
+    url(https://www.bloter.net/wp-content/uploads/2020/08/%EC%95%84%EB%A7%88%EC%A1%B4%ED%92%80%ED%95%84%EB%A8%BC%ED%8A%B8.jpg);
   min-height: 100%;
 `;
 
@@ -57,7 +57,7 @@ const BackgroundText = styled.div`
 
 const Body = styled.div`
   align-items: center;
-  width: 80%;
+  width: 85%;
   padding-top: 5%;
   margin: auto;
 `;
@@ -75,17 +75,6 @@ const AppTitle = styled.div`
 const Blank = styled.div`
   background-color: ${props => props.theme.white};
   height: 5vh;
-`;
-const Loading = styled.div`
-  font-size: 20px;
-  text-align: center;
-  padding-top: 3px;
-  height: 5vh;
-`;
-const Error = styled.div`
-  font-size: 2vh;
-  height: 5vh;
-  align-items: center;
 `;
 
 const TitleBox = styled.div`

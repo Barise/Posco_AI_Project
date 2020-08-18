@@ -32,7 +32,7 @@ const Wrapper = styled.div`
       rgba(20, 20, 20, 0.7) 70%,
       rgba(20, 20, 20, 1)
     ),
-    url(https://t1.daumcdn.net/cfile/tistory/997E5C3C5BA1E68137);
+    url(https://s3-ap-northeast-2.amazonaws.com/www.sktinsight.com/wp-content/uploads/2017/09/%EC%95%84%EB%A7%88%EC%A1%B4%EC%9D%98%EB%B4%87%EB%B4%87%EB%B4%87_2.jpg);
   min-height: 100%;
 `;
 
@@ -58,7 +58,7 @@ const BackgroundText = styled.div`
 
 const Body = styled.div`
   align-items: center;
-  width: 80%;
+  width: 85%;
   padding-top: 5%;
   margin: auto;
 `;

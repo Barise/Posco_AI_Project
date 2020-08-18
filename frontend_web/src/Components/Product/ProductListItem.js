@@ -27,6 +27,8 @@ const Category = styled.div`
   }
 `;
 
+
+
 export default ({ product }) => {
   return (
     <Body>
