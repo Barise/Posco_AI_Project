@@ -30,15 +30,12 @@ const Category = styled.div`
 export default ({ product }) => {
   return (
     <Body>
-      <Category>{product.asin}</Category>
+      <Category>{product.id}</Category>
+      <Category>{product.productID}</Category>
       <Category>{product.name}</Category>
       <Category>{product.podID}</Category>
       <Category>{product.binID}</Category>
-      <Category>{product.height}</Category>
-      <Category>{product.length}</Category>
-      <Category>{product.width}</Category>
       <Category>{product.quantity}</Category>
-      <Category>{product.weight}</Category>
       <ProductDelete></ProductDelete>
     </Body>
   );

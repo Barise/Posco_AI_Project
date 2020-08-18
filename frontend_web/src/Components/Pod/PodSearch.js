@@ -47,7 +47,7 @@ export default () => {
     <div>
       <Form>
         <Input
-          placeholder="제품을 검색해 주세요"
+          placeholder="진열장(Pod) 이름으로 검색해 주세요."
           name="term"
         />
         <Button type="submit">

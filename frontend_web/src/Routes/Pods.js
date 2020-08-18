@@ -2,11 +2,10 @@ import React, { useState, useRef, useCallback, useEffect } from "react";
 import styled from "styled-components";
 import axios from 'axios';
 import { BASE_URL } from '../constants';
-import PodList from "../Components/Pod/PodList";
 
-// import PodInsert from "../Components/Pod/PodInsert";
-// import PodSearch from "../Components/Pod/PodSearch";
-// import { searchPod } from "./KSM/gplPod";
+import PodList from "../Components/Pod/PodList";
+import PodInsert from "../Components/Pod/PodInsert";
+import PodSearch from "../Components/Pod/PodSearch";
 
 const PodTemplate = styled.div`
   min-height: 100%;
@@ -117,65 +116,26 @@ export default () => {
       });
   }, []);
 
-
-
-  // const onSearch = useCallback(newData => {
-  //   axios
-  //     .post(`${BASE_URL}/pod/searchlist`)
-  //   setpods(newData);
-  // }, []);
-
-  // register(authForm) {
-  //   return axios.post(`${this.URL}/register/`, authForm);
-  // }
-
-
-  // const nextId = useRef(pods.length);
-
-
-  // const onInsert = useCallback(
-  //   form => {
-  //     const pod = {
-  //       id: nextId.current,
-  //       ...form
-  //     };
-  //     setpods(pods.concat(pod));
-  //     nextId.current += 1;
-  //   },
-  //   [pods]
-  // );
-
-  // const onRemove = useCallback(
-  //     target => {
-  //         setpods(pods.filter(pod => pod.id !== target.id));
-  //     },
-  //     [pods]
-  // );
-
   return (
     <PodTemplate>
       <HeaderBox>
         <Wrapper>
-          <BackgroundText>Stock Manage</BackgroundText>
+          <BackgroundText>Pod Manage</BackgroundText>
         </Wrapper>
       </HeaderBox>
 
       <Body>
-        <TitleBox>
-          {/* <PodSearch onSearch={onSearch}></PodSearch> */}
-        </TitleBox>
+        
 
-        <AppTitle>제품 정보 추가</AppTitle>
-        {/* <PodInsert onInsert={onInsert}></PodInsert> */}
+        <AppTitle>진열장(Pod) 이름과 이미지를 업로드 해주세요.</AppTitle>
+        <PodInsert></PodInsert>
         <Blank></Blank>
 
+        <TitleBox>
+          <PodSearch></PodSearch>
+        </TitleBox>
         <InsertBox>
-          {/* {loading && <Loading>loading</Loading>}
-          {error && <Error>error</Error>}
-          {!loading && !error && ( */}
-          {/* <PodList pods={pods} onRemove={onRemove}></PodList> */}
           <PodList pods={pods}></PodList>
-          {/* )} */}
         </InsertBox>
       </Body>
     </PodTemplate>

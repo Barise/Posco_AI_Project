@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-// import ProductDelete from "./ProductDelete";
+import PodDelete from "./PodDelete";
 
 const Body = styled.div`
   display: flex;
@@ -34,8 +34,8 @@ export default ({ pod }) => {
       <Category>{pod.binID}</Category>
       <Category>{pod.emptinessScore}</Category>
       <Category>{pod.expectedQuantity}</Category>
-      <Category>{pod.imageFrame}</Category>
-      {/* <ProductDelete onRemove={onRemove} Product={Product}></ProductDelete> */}
+      <Category>{pod.imageName}</Category>
+      <PodDelete></PodDelete>
     </Body>
   );
 };

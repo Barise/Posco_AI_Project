@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const Button = styled.button`
@@ -16,6 +16,6 @@ const Button = styled.button`
 `;
 
 export default () => {
-
-  return <Button>❌</Button>;
+  return <Button>✔️</Button>;
 };
+

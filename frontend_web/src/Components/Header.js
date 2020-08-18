@@ -53,6 +53,9 @@ export default () => {
         <Link to="Stock">
           <LinkItem>Stock</LinkItem>
         </Link>
+        <Link to="Image">
+          <LinkItem>ImageUpload</LinkItem>
+        </Link>
       </Links>
     </Header>
   );

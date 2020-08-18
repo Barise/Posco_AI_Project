@@ -79,7 +79,6 @@ export default ({ pods }) => {
           <PodListItem
             key={pod.asin}
             pod={pod}
-          // onRemove={onRemove}
           ></PodListItem>
         ))}
       </SearchResult>

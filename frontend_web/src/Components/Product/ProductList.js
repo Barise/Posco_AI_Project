@@ -66,15 +66,12 @@ export default ({ products }) => {
   return (
     <Body>
       <AppTitle>
-        <Category> 제품번호(asin)</Category>
+        <Category>번호(ID)</Category>
+        <Category> 제품번호(productID)</Category>
         <Category> 제품이름(name)</Category>
         <Category> 진열장번호(podID)</Category>
         <Category> 선반번호(binID)</Category>
-        <Category> 제품높이(height) </Category>
-        <Category> 제품길이(length)</Category>
-        <Category> 제품넓이(width)</Category>
         <Category> 제품개수(quantity)</Category>
-        <Category> 제품무게(weight)</Category>
         <Button></Button>
       </AppTitle>
 
@@ -83,7 +80,6 @@ export default ({ products }) => {
           <ProductListItem
             key={product.asin}
             product={product}
-          // onRemove={onRemove}
           ></ProductListItem>
         ))}
       </SearchResult>

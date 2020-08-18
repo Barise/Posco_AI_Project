@@ -2,13 +2,9 @@ import React, { useState, useRef, useCallback, useEffect } from "react";
 import styled from "styled-components";
 import axios from 'axios';
 import { BASE_URL } from '../constants';
-import StockList from "../Components/Stock/StockList";
+import ImageUpload from '../Components/ImageUpload/ImageUpload'
 
-// import StockInsert from "../Components/Stock/StockInsert";
-// import StockSearch from "../Components/Stock/StockSearch";
-// import { searchStock } from "./KSM/gplStock";
-
-const StockTemplate = styled.div`
+const ImageTemplate = styled.div`
   min-height: 100%;
   height: 200vh;
   width: 100%;
@@ -77,12 +73,14 @@ const Blank = styled.div`
   background-color: ${props => props.theme.white};
   height: 5vh;
 `;
+
 const Loading = styled.div`
   font-size: 20px;
   text-align: center;
   padding-top: 3px;
   height: 5vh;
 `;
+
 const Error = styled.div`
   font-size: 2vh;
   height: 5vh;
@@ -103,80 +101,24 @@ const InsertBox = styled.div`
 `;
 
 export default () => {
-  const [stocks, setStock] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get(`${BASE_URL}/stock/list`)
-      .then((res) => {
-        setStock(res.data);
-        console.log(res.data);
-      })
-      .catch((e) => {
-        console.log(e);
-      });
-  }, []);
-
-
-
-  // const onSearch = useCallback(newData => {
-  //   axios
-  //     .post(`${BASE_URL}/stock/searchlist`)
-  //   setstock(newData);
-  // }, []);
-
-  // register(authForm) {
-  //   return axios.post(`${this.URL}/register/`, authForm);
-  // }
-
-
-  // const nextId = useRef(stock.length);
-
-
-  // const onInsert = useCallback(
-  //   form => {
-  //     const stock = {
-  //       id: nextId.current,
-  //       ...form
-  //     };
-  //     setstock(stock.concat(stock));
-  //     nextId.current += 1;
-  //   },
-  //   [stock]
-  // );
-
-  // const onRemove = useCallback(
-  //     target => {
-  //         setstock(stock.filter(stock => stock.id !== target.id));
-  //     },
-  //     [stock]
-  // );
-
   return (
-    <StockTemplate>
+    <ImageTemplate>
       <HeaderBox>
         <Wrapper>
-          <BackgroundText>Stock Manage</BackgroundText>
+          <BackgroundText>Image Upload</BackgroundText>
         </Wrapper>
       </HeaderBox>
 
       <Body>
         <TitleBox>
-          {/* <StockSearch onSearch={onSearch}></StockSearch> */}
+          {/* <ImageSearch onSearch={onSearch}></ImageSearch> */}
         </TitleBox>
-        <AppTitle>예측값과 DB의 값이 일치하지 않는 제품들 입니다.</AppTitle>
-        {/* <StockInsert onInsert={onInsert}></StockInsert> */}
-        <Blank></Blank>
-
+        <AppTitle>이미지 업로드</AppTitle>
         <InsertBox>
-          {/* {loading && <Loading>loading</Loading>}
-          {error && <Error>error</Error>}
-          {!loading && !error && ( */}
-          {/* <StockList stock={stock} onRemove={onRemove}></StockList> */}
-          <StockList stocks={stocks}></StockList>
-          {/* )} */}
-        </InsertBox>
+          <ImageUpload></ImageUpload>
+        {/* <ImageInsert onInsert={onInsert}></ImageInsert> */}
+      </InsertBox>  
       </Body>
-    </StockTemplate>
+    </ImageTemplate>
   );
 };
